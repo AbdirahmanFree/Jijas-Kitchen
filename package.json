@@ -1,0 +1,24 @@
+{
+  "name": "jijas-kitchen",
+  "version": "1.0.0",
+  "description": "MVP for the homepage of Jijas kitchen restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdirahmanFree/Jijas-Kitchen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdirahmanFree/Jijas-Kitchen/issues"
+  },
+  "homepage": "https://github.com/AbdirahmanFree/Jijas-Kitchen#readme",
+  "devDependencies": {
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  }
+}
