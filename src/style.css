@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E6E8E6;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    color: #2B2B2B;
+}
+
+#header {
+    background-color: #EEEEEE;
+    grid-area: 1/1/2/2;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+#navBar-header {
+    grid-area: 2/1/3/2;
+}
