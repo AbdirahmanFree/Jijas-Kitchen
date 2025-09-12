@@ -16,6 +16,7 @@ const navBtns = document.createElement("div");
 const toolImages = document.createElement("div");
 const accountImage = document.createElement("img");
 const cartImage = document.createElement("img");
+const smallText = document.createElement("div");
 
 // Adding Id's
 header.id = "header";
@@ -40,7 +41,7 @@ header.appendChild(navBar)
 // Logo and text
 logoText.classList.add("flex")
 logoText.id = "logo-section"
-const smallText = document.createElement("div");
+
 smallText.textContent = "Jija's Kitchen";
 smallText.id = "logo-text"
 image.src = logo
