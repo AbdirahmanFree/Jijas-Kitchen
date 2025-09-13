@@ -2,6 +2,13 @@ import "./style.css"
 import logo from "./assets/logo.png"
 import account from "./assets/account.svg"
 import cart from "./assets/cart.svg"
+import { home } from "./home"
+import { menu } from "./menu"
+import { about } from "./about"
+import { changeContent } from "./index.js"
+
+
+let page = "home"
 
 // The necessary dom elements
 const header = document.createElement("div");
@@ -56,36 +63,44 @@ navBtns.id = "nav-btn-section"
 
 //Home Button
 homeBtn.classList.add("nav-btn")
-homeBtn.id = "home";
+homeBtn.style.borderBottom = "3px solid orange"
+homeBtn.id = "home-btn";
 homeBtn.textContent = "Home";
 homeBtn.addEventListener("click", () => {
     homeBtn.style.borderBottom = "3px solid orange"
     menuBtn.style.borderBottom = "none"
     aboutBtn.style.borderBottom = "none"
+    page = "home"
+    changeContent(home)
 
 })
 navBtns.appendChild(homeBtn)
 
 // Menu Button
 menuBtn.classList.add("nav-btn")
-menuBtn.id = "menu";
+menuBtn.id = "menu-btn";
 menuBtn.textContent = "Menu";
 menuBtn.addEventListener("click", () => {
     menuBtn.style.borderBottom = "3px solid orange"
     homeBtn.style.borderBottom = "none"
     aboutBtn.style.borderBottom = "none"
+    page = "menu"
+    changeContent(menu)
+
 
 })
 navBtns.appendChild(menuBtn)
 
 // About Button
 aboutBtn.classList.add("nav-btn")
-aboutBtn.id = "about";
+aboutBtn.id = "about-btn";
 aboutBtn.textContent = "About";
 aboutBtn.addEventListener("click", () => {
     aboutBtn.style.borderBottom = "3px solid orange"
     homeBtn.style.borderBottom = "none"
     menuBtn.style.borderBottom = "none"
+    page = "about"
+    changeContent(about)
 
 })
 
@@ -95,6 +110,9 @@ navBar.appendChild(navBtns)
 
 ///////////////////////////////////
 
+function getPage(){
+    return page;
+}
 
 
 
@@ -104,5 +122,4 @@ navBar.appendChild(navBtns)
 
 
 
-
-export { header }
+export { header, getPage }

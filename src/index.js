@@ -1,7 +1,8 @@
 import "./style.css"
-import { header } from "./header";
+import { header, getPage } from "./header";
 import { footer } from "./footer";
 import { home } from "./home";
+
 // Creating sections
 const body = document.querySelector("body");
 const container = document.createElement("div");
@@ -21,6 +22,14 @@ content.appendChild(home)
 container.appendChild(content)
 container.appendChild(footer)
 body.appendChild(container)
+
+function changeContent(page){
+    const oldPage = content.firstChild
+    content.removeChild(oldPage)
+    content.appendChild(page)
+}
+
+export { changeContent}
 
 
 
