@@ -58,21 +58,44 @@ navBtns.id = "nav-btn-section"
 homeBtn.classList.add("nav-btn")
 homeBtn.id = "home";
 homeBtn.textContent = "Home";
+homeBtn.addEventListener("click", () => {
+    homeBtn.style.borderBottom = "3px solid orange"
+    menuBtn.style.borderBottom = "none"
+    aboutBtn.style.borderBottom = "none"
+
+})
 navBtns.appendChild(homeBtn)
 
 // Menu Button
 menuBtn.classList.add("nav-btn")
 menuBtn.id = "menu";
 menuBtn.textContent = "Menu";
+menuBtn.addEventListener("click", () => {
+    menuBtn.style.borderBottom = "3px solid orange"
+    homeBtn.style.borderBottom = "none"
+    aboutBtn.style.borderBottom = "none"
+
+})
 navBtns.appendChild(menuBtn)
 
 // About Button
 aboutBtn.classList.add("nav-btn")
 aboutBtn.id = "about";
 aboutBtn.textContent = "About";
+aboutBtn.addEventListener("click", () => {
+    aboutBtn.style.borderBottom = "3px solid orange"
+    homeBtn.style.borderBottom = "none"
+    menuBtn.style.borderBottom = "none"
+
+})
+
 navBtns.appendChild(aboutBtn)
 
 navBar.appendChild(navBtns)
+
+///////////////////////////////////
+
+
 
 
 
