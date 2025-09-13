@@ -1,10 +1,13 @@
 import "./style.css"
 import { header } from "./header";
 import { footer } from "./footer";
+import { hero } from "./hero";
 // Creating sections
 const body = document.querySelector("body");
 const container = document.createElement("div");
 const content = document.createElement("div");
+
+
 
 
 

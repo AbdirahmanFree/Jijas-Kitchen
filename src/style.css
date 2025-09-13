@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+
+#container {
+  overflow: auto;              
+  scrollbar-width: none;        
+  -ms-overflow-style: none;     
+}
+
+
+
 #container {
     width: 100vw;
     height: 100vh;
@@ -12,6 +21,7 @@
     grid-template-columns: 1fr;
     color: #2B2B2B;
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 
 #header {
@@ -22,6 +32,7 @@
     display: grid;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr;
+    z-index: 2;
 }
 
 #navBar-header {
@@ -108,4 +119,37 @@
     max-height: 20px;
     width: 20px;
     height: 20px;
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+.button-up {
+    background-color: #2B2B2B;
+    color: #EEEEEE;
+}
+
+.button-down {
+    background-color: #EEEEEE;
+    color: #2B2B2B;
+}
+
+#hero {
+    width: 1440px;
+    height: 960px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
