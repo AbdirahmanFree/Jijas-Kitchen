@@ -158,7 +158,7 @@
 #home {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #hours {
@@ -174,8 +174,34 @@
     padding-bottom: 100px;
     border-radius: 20px;
     border: double #E6E8E6 10px;
+    align-self: center;
 }
 #hoursHead {
     padding-bottom: 40px;
+
+}
+
+.food-Card {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 2fr 1fr;
+    background-color: #EEEEEE;
+    border: double #E6E8E6 10px;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.food-Card-Image {
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    row-gap: 20px;
 
 }
